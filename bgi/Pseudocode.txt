@@ -1,0 +1,29 @@
+Benjamin Xerri	
+
+Pseudocode for Project 1: "The pesky tourist"
+
+1) Set up the IDE with appropriate BGI library.
+2) Make sure project has pictures available 
+
+--Now the code
+
+3)Create a window that will get loaded all of the images that you will use for your project	, call it 'CurrentImage'
+4)Create a second window that will display the final resulting image of your project call it'FinalImage'
+5)Create a function that will load each image, call it'loadImage':
+	The function will loop through all the images,
+	Set the images starting with the first, as long as there are images left.
+	Make each image your current image that you will work on using the BGI built in function "setcurrentwindow".
+	
+6) Now that Your image is loaded, create another function to get the pixel value,callit 'getPixel':
+	For each images that is loaded('CurrentImage'), you will call this function.
+	This function will compare the RGB pixel values for each 9 images that get loaded into the 'loadImage' function.
+	For every pixel of the image, place the 'Red' pixel value into an integer array.
+								  place the 'Green' pixel value into an integer array.
+								  place the 'Blue' pixel value into an integer array. 
+
+	Sort the array of RGB values from lowest to higest.
+	Pick out the median value of each Red blue green value, and store them into variables
+	RedPixel, BluePixel, GreenPixel.
+	After that call the putpixel built in function for that current pixel of your 'FinalImage'
+	
+	Repeat this process until you have gone through every pixel.  								
